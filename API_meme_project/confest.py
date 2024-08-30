@@ -39,7 +39,7 @@ def create_new_object_endpoint(headers=None):
 
 
 @pytest.fixture()
-def meme_id(auth_token, post_endpoint):
+def meme_id(auth_token, create_object_endpoint):
     token, user = auth_token
     body = {
         "text": "some_text",
